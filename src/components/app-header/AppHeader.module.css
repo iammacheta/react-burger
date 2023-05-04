@@ -1,0 +1,45 @@
+.menu {
+    position: relative;
+    margin: 40px 0 0 0;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 19px;
+    left: 475px;
+}
+
+.title {
+    margin: 0;
+}
+
+.item:last-of-type {
+    color: #8585AD;
+}
