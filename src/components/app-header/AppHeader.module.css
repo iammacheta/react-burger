@@ -10,7 +10,7 @@
     align-items: center;
     list-style: none;
     width: 100%;
-    margin: 0;
+    margin: 40px 0 0 0;
     padding: 16px 0;
 }
 
@@ -28,18 +28,19 @@
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 0;
+    cursor: pointer;
+}
+
+.item:hover {
+    opacity: 0.8;
 }
 
 .logo {
     position: absolute;
     top: 19px;
-    left: 475px;
+    left: calc(50% - 145px);
 }
 
 .title {
     margin: 0;
-}
-
-.item:last-of-type {
-    color: #8585AD;
 }
