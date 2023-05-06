@@ -2,7 +2,7 @@ import burgerIngredientsStyles from './BurgerIngredients.module.css';
 import ProductsList from './productsList/ProductsList';
 import { useState } from 'react';
 import { Tab } from '@ya.praktikum/react-developer-burger-ui-components';
-
+import data from '../../utils/data';
 
 export default function BurgerIngredients() {
     const [current, setCurrent] = useState('bun')
@@ -23,9 +23,9 @@ export default function BurgerIngredients() {
                     Начинки
                 </Tab>
             </div>
-            {current === 'bun' ? <ProductsList title={"Булки"} type={"bun"} />
-                : current === "sauce" ? <ProductsList title={"Соусы"} type={"sauce"} />
-                    : <ProductsList title={"Начинки"} type={"main"} />
+            {current === 'bun' ? <ProductsList data={data} title={"Булки"} type={"bun"} />
+                : current === "sauce" ? <ProductsList data={data} title={"Соусы"} type={"sauce"} />
+                    : <ProductsList data={data} title={"Начинки"} type={"main"} />
             }
         </section>
     )

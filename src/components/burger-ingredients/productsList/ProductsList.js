@@ -1,8 +1,7 @@
 import productsListStyles from './ProductsList.module.css';
 import Card from '../card/Card';
-import data from '../../../utils/data';
 
-export default function ProductsList({ title, type }) {
+export default function ProductsList({data, title, type }) {
     return (
         <div className={productsListStyles.container}>
             <p className="text text_type_main-medium">

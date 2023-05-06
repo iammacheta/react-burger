@@ -1,0 +1,11 @@
+.priceContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.priceContainer svg {
+    width: 36px;
+    height: 36px;
+}
+

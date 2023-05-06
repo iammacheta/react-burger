@@ -69,6 +69,14 @@ const constructorData = [
         "price": 80,
         "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
         "isLocked": false
+    },
+    {
+        "_id": "60666c42cc7b410027a1a9b2",
+        "name": "Флюоресцентная булка R2-D3",
+        "type": "bottom",
+        "price": 988,
+        "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+        "isLocked": true
     }
 ]
 
