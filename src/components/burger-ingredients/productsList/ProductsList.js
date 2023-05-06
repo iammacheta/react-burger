@@ -4,7 +4,7 @@ import data from '../../../utils/data';
 
 export default function ProductsList({ title, type }) {
     return (
-        <div>
+        <div className={productsListStyles.container}>
             <p className="text text_type_main-medium">
                 {title}
             </p>

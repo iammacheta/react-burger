@@ -7,3 +7,9 @@
     margin: 24px 16px 40px 16px;
     padding: 0;
 }
+
+.container {
+    float: left;
+    overflow-y: auto;
+    height: calc(100vh - 364px);
+}
