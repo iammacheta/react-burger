@@ -1,5 +1,6 @@
 import totalPriceStyles from './TotalPrice.module.css';
-import { CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components'
+import { CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components';
+import PropTypes from 'prop-types';
 
 export default function TotalPrice({ orderData }) {
     const totalPriceValue = orderData.reduce((acc, currentValue) => {
@@ -15,3 +16,14 @@ export default function TotalPrice({ orderData }) {
         </div>
     )
 }
+
+TotalPrice.propTypes = {
+    constructorData: PropTypes.arrayOf(PropTypes.shape({
+        "_id": PropTypes.string,
+        "name": PropTypes.string,
+        "price": PropTypes.number.isRequired,
+        "image": PropTypes.string,
+        "isLocked": PropTypes.bool,
+        "type": PropTypes.oneOf(["top", "bottom", undefined])
+    }))
+}; 
