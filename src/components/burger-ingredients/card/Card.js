@@ -1,6 +1,5 @@
-import { Counter } from '@ya.praktikum/react-developer-burger-ui-components';
+import { Counter, CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components';
 import cardStyles from './Card.module.css';
-import currency from '../../../images/currency.svg';
 
 export default function Card({ image, count, price, name }) {
     return (
@@ -9,7 +8,7 @@ export default function Card({ image, count, price, name }) {
             <img src={image} alt='карточка' className={cardStyles.image} />
             <div className={cardStyles.priceSection}>
                 <p className="text text_type_digits-default">{price}</p>
-                <img src={currency} alt='валюта' className={cardStyles.currency} />
+                <CurrencyIcon type="primary" />
             </div>
             <p className={cardStyles.name + " text text_type_main-default"}>
                 {name}

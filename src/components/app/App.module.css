@@ -1,7 +1,7 @@
 .app {
     max-width: 1240px;
-    height: 100vh;
-    margin: 0 auto;
+    height: calc(100vh - 80px);
+    margin: 40px auto;
 }
 
 .main {
