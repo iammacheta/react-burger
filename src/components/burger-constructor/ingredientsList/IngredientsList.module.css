@@ -1,0 +1,22 @@
+.cardList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    float: left;
+    overflow-y: auto;
+    height: calc(100vh - 424px);
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    justify-content: end;
+    align-items: center;
+    margin-right: 16px;
+}
