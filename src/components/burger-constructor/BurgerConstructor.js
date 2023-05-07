@@ -8,9 +8,9 @@ import { Button } from '@ya.praktikum/react-developer-burger-ui-components';
 export default function BurgerConstructor() {
     return (
         <section className={burgerConstructorStyles.burgerConstructor}>
-            <IngredientsList constructorData={constructorData} />
+            <IngredientsList data={constructorData} />
             <div className={burgerConstructorStyles.totalSection}>
-                <TotalPrice orderData={constructorData} />
+                <TotalPrice data={constructorData} />
                 <Button htmlType="button" type="primary" size="large">
                     Оформить заказ
                 </Button>

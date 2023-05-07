@@ -1,13 +1,13 @@
 
 import IngredientsListStyles from './IngredientsList.module.css';
 import { ConstructorElement, DragIcon } from '@ya.praktikum/react-developer-burger-ui-components';
-import PropTypes from 'prop-types';
+import { INGREDIENTS_LIST_TYPE } from '../../../utils/types';
 
-export default function IngredientsList({ constructorData }) {
+export default function IngredientsList({ data }) {
     return (
         <div className={IngredientsListStyles.container}>
             <ul className={IngredientsListStyles.cardList}>
-                {constructorData.map((element) => {
+                {data.map((element) => {
                     const additionalText = element.type === "top" ? " (верх)" :
                         element.type === "bottom" ? " (низ)" : "";
 
@@ -29,13 +29,4 @@ export default function IngredientsList({ constructorData }) {
     )
 }
 
-IngredientsList.propTypes = {
-    constructorData: PropTypes.arrayOf(PropTypes.shape({
-        "_id": PropTypes.string.isRequired,
-        "name": PropTypes.string.isRequired,
-        "price": PropTypes.number.isRequired,
-        "image": PropTypes.string.isRequired,
-        "isLocked": PropTypes.bool.isRequired,
-        "type": PropTypes.oneOf(["top", "bottom", undefined])
-    }))
-};
+IngredientsList.propTypes = INGREDIENTS_LIST_TYPE;

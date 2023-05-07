@@ -1,6 +1,6 @@
 import productsListStyles from './ProductsList.module.css';
 import Card from '../card/Card';
-import PropTypes from 'prop-types';
+import { PRODUCT_LIST_TYPE } from '../../../utils/types';
 
 export default function ProductsList({ data, title, type }) {
     return (
@@ -23,15 +23,4 @@ export default function ProductsList({ data, title, type }) {
     )
 }
 
-ProductsList.protoTypes = {
-    data: PropTypes.arrayOf(PropTypes.shape({
-        "_id": PropTypes.string,
-        "name": PropTypes.string,
-        "price": PropTypes.number.isRequired,
-        "image": PropTypes.string,
-        "isLocked": PropTypes.bool,
-        "type": PropTypes.oneOf(["top", "bottom", undefined])
-    })),
-    title: PropTypes.string.isRequired,
-    type: PropTypes.oneOf(["sauce", "bun", "main"]).isRequired
-}
+ProductsList.propTypes = PRODUCT_LIST_TYPE;
