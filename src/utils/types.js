@@ -6,7 +6,6 @@ const INGREDIENTS_LIST_TYPE = {
         "name": PropTypes.string.isRequired,
         "price": PropTypes.number.isRequired,
         "image": PropTypes.string.isRequired,
-        "isLocked": PropTypes.bool.isRequired,
         "type": PropTypes.oneOf(["top", "bottom", undefined])
     }))
 };
@@ -36,4 +35,8 @@ const PRODUCT_LIST_TYPE = {
     type: PropTypes.string
 };
 
-export { INGREDIENTS_LIST_TYPE, ORDER_DATA_TYPE, INGREDIENTS_CARD_TYPE, PRODUCT_LIST_TYPE };
+const LIST_ITEMS_TYPE = Object.create(INGREDIENTS_LIST_TYPE, {
+    ingredientType: PropTypes.oneOf(["top", "bottom", undefined])
+})
+
+export { INGREDIENTS_LIST_TYPE, ORDER_DATA_TYPE, INGREDIENTS_CARD_TYPE, PRODUCT_LIST_TYPE, LIST_ITEMS_TYPE };
