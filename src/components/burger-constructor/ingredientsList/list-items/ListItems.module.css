@@ -1,0 +1,12 @@
+.item {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}

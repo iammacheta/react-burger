@@ -1,0 +1,15 @@
+.cardList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 32px;
+    margin: 24px 16px 0px 16px;
+    padding: 0;
+}
+
+.container {
+    float: left;
+    overflow-y: auto;
+    height: calc(100vh - 364px);
+}

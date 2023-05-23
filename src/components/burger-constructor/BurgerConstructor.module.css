@@ -1,0 +1,15 @@
+.burgerConstructor {
+    margin: 100px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    column-gap: 40px;
+    margin-right: 16px;
+}

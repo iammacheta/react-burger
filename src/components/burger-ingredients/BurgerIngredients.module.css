@@ -1,0 +1,13 @@
+.burgerIngredients {
+    margin: 40px 0;
+}
+
+.title {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    padding-bottom: 40px;
+}
